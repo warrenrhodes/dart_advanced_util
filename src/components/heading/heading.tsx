@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react';
 import type { HTMLAttributes } from 'react';
 import { FaHashtag } from 'react-icons/fa';
@@ -20,9 +21,11 @@ function Heading(props: HeadingProps) {
   if (level > 1) {
     return (
       <div className="relative -ml-4 pl-4 group mb-4 mt-4  dark:text-white  text-gray-600 text-2xl hover:underline font-bold">
-        <a href={`#${id}`}>{Component}</a>
+        <Link id={id} href={`#${id}`}>
+          {Component}
+        </Link>
 
-        <a
+        <Link
           href={`#${id}`}
           aria-label="anchor"
           className="
@@ -63,7 +66,7 @@ function Heading(props: HeadingProps) {
           "
         >
           <FaHashtag width={12} height={12} />
-        </a>
+        </Link>
       </div>
     );
   }

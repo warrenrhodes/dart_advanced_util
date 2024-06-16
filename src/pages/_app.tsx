@@ -5,7 +5,6 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import type { MarkdocNextJsPageProps } from '@markdoc/next.js';
 import { ThemeProvider } from 'next-themes';
-import { SkipToContent } from '@/components/skip-to-content';
 import { Header } from '@/components/header';
 import { LayoutDocs } from '@/components/layout';
 import type { Metadata } from 'next';
@@ -28,8 +27,9 @@ interface MyAppProps extends AppProps {
   pageProps: MarkdocNextJsPageProps;
 }
 
-const TITLE = 'Markdoc';
-const DESCRIPTION = 'A powerful, flexible, Markdown-based authoring framework';
+const TITLE = 'The dart avanced utils';
+const DESCRIPTION =
+  'A collection of extension methods for the String class to add common utility functions.';
 let SITE = 'https://' + process.env.VERCEL_URL;
 
 function MyApp(props: MyAppProps) {
@@ -65,11 +65,10 @@ function MyApp(props: MyAppProps) {
         <meta name="referrer" content="strict-origin" />
         <meta name="title" content={title} />
         <meta name="description" content={description} />
-        <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/logo.png" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <ThemeProvider attribute="class" disableTransitionOnChange enableSystem>
-        <SkipToContent />
         <Header />
         <LayoutDocs markdoc={pageProps.markdoc}>
           <Component key={router.route} {...pageProps} />

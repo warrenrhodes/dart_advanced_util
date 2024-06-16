@@ -1,15 +1,13 @@
 import next from 'next';
 import fs from 'fs';
-import path from 'path';
 import http from 'http';
 import { parse } from 'url';
 
-const filePath = path.join(process.cwd(), 'src', 'lib', 'extenxion.dart');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = app.getRequestHandler();
 
-const port = 3100;
+const port = app.port;
 
 app.prepare().then(() => {
   const server = http.createServer((req, res) => {

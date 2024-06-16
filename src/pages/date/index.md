@@ -37,7 +37,7 @@ Note: The date extenxions cannot be tested directly on this site, as they requir
 
 {% /callout %}
 
-## Checking if a Date is Today
+## isToday
 
 Determines if a DateTime instance is today's date.
 
@@ -58,7 +58,7 @@ Output:
 
 {% /callout %}
 
-## Checking if a Date is Yesterday
+## isYesterday
 
 Determines if a DateTime instance is yesterday's date.
 
@@ -79,7 +79,7 @@ Output:
 
 {% /callout %}
 
-## Checking if a Date is Tomorrow
+## isTomorrow
 
 Determines if a DateTime instance is tomorrow's date.
 
@@ -100,7 +100,7 @@ Output:
 
 {% /callout %}
 
-## Checking if a Date is in the Past
+## isInPast
 
 Determines if a DateTime instance is in the past.
 
@@ -122,7 +122,7 @@ Output:
 
 {% /callout %}
 
-## Checking if a Date is in the Future
+## isinfuture
 
 Determines if a DateTime instance is in the future.
 
@@ -143,7 +143,7 @@ Output:
 
 {% /callout %}
 
-## Checking if a Date is in a Range
+## isDateInRange
 
 Checks if a DateTime instance is within a specified range.
 
@@ -167,7 +167,7 @@ Output:
 
 {% /callout %}
 
-## Getting Localized Weekday
+## localizedWeekday
 
 Returns the localized weekday name for a DateTime instance.
 
@@ -188,7 +188,7 @@ Output:
 
 {% /callout %}
 
-## Getting Localized Month
+## localizedMonth
 
 Returns the localized month name for a DateTime instance.
 
@@ -209,7 +209,7 @@ Output:
 
 {% /callout %}
 
-## Checking if a Duration has Passed
+## hasDurationPassed
 
 Checks if a specified duration has passed since the DateTime instance.
 
@@ -231,7 +231,7 @@ Output:
 
 {% /callout %}
 
-## Adding Business Days
+## addBusinessDays
 
 Adds a specified number of business days to a DateTime instance.
 
@@ -253,7 +253,7 @@ Output:
 
 {% /callout %}
 
-## Subtracting Business Days
+## subtractBusinessDays
 
 Subtracts a specified number of business days from a DateTime instance.
 
@@ -275,7 +275,7 @@ Output:
 
 {% /callout %}
 
-## Getting Start of Month
+## startOfMonth
 
 Returns the start of the month for a DateTime instance.
 
@@ -297,7 +297,7 @@ Output:
 
 {% /callout %}
 
-## Getting End of Month
+## endOfMonth
 
 Returns the end of the month for a DateTime instance.
 
@@ -319,7 +319,7 @@ Output:
 
 {% /callout %}
 
-## Checking for Leap Year
+## hasALeapYear
 
 Checks if the year of a DateTime instance is a leap year.
 

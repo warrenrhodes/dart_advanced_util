@@ -43,7 +43,7 @@ function Header() {
       >
         <div className="flex items-center">
           <Link
-            href="/"
+            href="/docs"
             className="
               flex
               flex-row
@@ -54,7 +54,6 @@ function Header() {
 
               dark:text-white
             "
-            passHref
           >
             🔮 Advanced Dart Util
           </Link>

@@ -33,14 +33,9 @@ const THEMES = {
 };
 
 export function SelectTheme() {
-  const isMounted = useIsMounted();
   const { theme, setTheme } = useTheme();
 
   const currentTheme = theme as keyof typeof THEMES;
-
-  if (!isMounted()) {
-    return null;
-  }
 
   return (
     <Listbox value={theme} onChange={setTheme}>
@@ -107,7 +102,7 @@ export function SelectTheme() {
               <ListboxOption
                 key={id}
                 value={id}
-                className={({ active }) => `
+                className={({ focus }) => `
                   flex
                   items-center
                   justify-between
@@ -120,7 +115,7 @@ export function SelectTheme() {
                   duration-300
                   transition-colors
                   ${
-                    active
+                    focus
                       ? 'text-blue-700 dark:text-blue-600 dark:hover:text-blye-300 bg-blue-50 dark:bg-blue-800/10'
                       : 'text-slate-500 hover:text-slate-700 dark:text-slate-400 bg-white hover:bg-gray-50 dark:bg-transparent'
                   }

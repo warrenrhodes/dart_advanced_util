@@ -33,7 +33,3 @@ export default async function handler(req: NextRequest) {
     return new Response('Failed to run your code', { status: 500 });
   }
 }
-// export async function POST(req: Request) {
-//   const body = await req.json();
-//   console.log(body);
-// }

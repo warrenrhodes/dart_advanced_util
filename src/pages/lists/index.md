@@ -166,7 +166,7 @@ Output:
 
 {% /callout %}
 
-## Finding Maximum Value
+## Max
 
 Returns the maximum value in the list.
 
@@ -187,7 +187,7 @@ Output:
 
 {% /callout %}
 
-## Finding Minimum Value
+## Min
 
 Returns the minimum value in the list.
 
